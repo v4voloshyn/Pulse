@@ -28,5 +28,15 @@
 		font-size: 18px;
 		text-align: right;
 		color: #FFFFFF;
+		text-decoration: none;
+		&:hover {
+			color: #fff;
+		}
 	}
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	
 }
