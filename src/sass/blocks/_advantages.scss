@@ -2,14 +2,6 @@
 	min-height: 473px;
 	padding: 73px 0 82px 0;
 	background: #F6F6F6;
-	&__header {
-		display: block;
-		font-weight: bold;
-		font-size: 30px;
-		line-height: 30px;
-		text-align: center;
-		color: #0D0D0D;
-	}
 	&__wrapper {
 		margin-top: 60px;
 		display: flex;
@@ -35,7 +27,6 @@
 		text-align: center;
 		color: #0D0D0D;
 		a {
-			text-align: center;
 			color: #FF0000;
 			&:hover {
 				text-decoration: none;
