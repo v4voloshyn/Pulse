@@ -1,0 +1,21 @@
+@media screen and ( max-width:991px) {
+	.promo {
+		padding: 21px 15px 93px 15px;
+		&__header {
+			font-size: 36px;
+		}
+		&__subheader {
+			font-size: 20px;
+		}
+	}
+	.button {
+		&_main {
+			width: 250px;
+		}
+	}
+	.advantages {
+		&__descr {
+			padding: 0 10px;
+		}
+	}
+}
