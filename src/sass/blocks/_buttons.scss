@@ -10,6 +10,9 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: #FFFFFF;
+	&:hover {
+		transform: scale(1.05);
+	}
 	&_main {
 		margin-top: 65px;
 		width: 300px;
