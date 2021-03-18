@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,11 @@
 <!-- // Add the new slick-theme.css if you want the default styling
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
 <!-- // -->
-<!-- Подключаем стили -->
+<!-- Подключение библиотеки с Анимацией -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- /// -->
+
+<!-- Подключаем основные стили -->
 <link rel="stylesheet" href="css/style.min.css">
 <!-- // -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,8 +26,9 @@
 </head>
 
 <body>
-	<section class="promo">
+	<section class="promo" id="up">
 		<div class="container">
+			<!-- Шапка -->
 			<header class="header">
 				<a href="#" class="header__logo">
 					<img src="img/icons/logo.png" alt="Pulse-Logo">
@@ -37,7 +42,9 @@
 					<button class="button" data-modal="consultation">заказать звонок</button>
 				</div>
 			</header>
-
+			<!--/// Шапка -->
+			
+			<!-- Блок Промо -->
 			<div class="promo__wrapper">
 				<h1 class="promo__header">Подбор пульсометра</h1>
 				<h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
@@ -66,30 +73,34 @@
 			</div>
 		</div>
 	</section>
+			<!--/// Блок Промо -->
 
+	<!-- Блок Преимущества -->
 	<section class="advantages">
 		<div class="container">
-			<div class="title">НАШИ ПРЕИМУЩЕСТВА</div>
+			<h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
 			<div class="advantages__wrapper">
-			<div class="advantages__item">
-				<img src="img/icons/cup.png" alt="cup icon">
-				<div class="advantages__subheader">Делимся опытом</div>
-				<div class="advantages__descr">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
-			</div>
-			<div class="advantages__item">
-				<img src="img/icons/heart.png" alt="heart icon">
-				<div class="advantages__subheader">Заботимся о здоровье</div>
-				<div class="advantages__descr">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
-			</div>
-			<div class="advantages__item">
-				<img src="img/icons/shoe.png" alt="shoe icon">
-				<div class="advantages__subheader">Учим бегать</div>
-				<div class="advantages__descr">Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <a href="#" class="advantages__link">I LOVE RUNNING.</a></div>
-			</div>
+				<div class="advantages__item">
+					<img src="img/icons/cup.png" alt="cup icon">
+					<div class="advantages__subheader">Делимся опытом</div>
+					<div class="advantages__descr">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
+				</div>
+				<div class="advantages__item">
+					<img class="advantages__item_animated" src="img/icons/heart.png" alt="heart icon">
+					<div class="advantages__subheader">Заботимся о здоровье</div>
+					<div class="advantages__descr">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
+				</div>
+				<div class="advantages__item">
+					<img src="img/icons/shoe.png" alt="shoe icon">
+					<div class="advantages__subheader">Учим бегать</div>
+					<div class="advantages__descr">Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <a href="#" class="advantages__link">I LOVE RUNNING.</a></div>
+				</div>
 			</div>
 		</div>
 	</section>
+	<!-- ///Блок Преимущества -->
 
+	<!-- Блок консультации -->
 	<section class="consult">
 		<div class="container">
 			<h2 class="title title_left">
@@ -102,13 +113,15 @@
 			<form class="feed-form" action="#">
 				<input name="name" required type="text" placeholder="Ваше имя">
 				<input name="phone" required type="tel" placeholder="Ваш телефон">
-				<input name="email" required type="e-mail" placeholder="Ваш e-mail">
+				<input name="email" required type="email" placeholder="Ваш e-mail">
 				<button class="button button_submit">Заказать консультацию</button>
 			</form>
 		</div>
 	</section>
+<!-- /// Блок консультации -->
 
-	<section class="carousel">
+<!-- Блок Слайдера -->
+	<div class="carousel">
 		<div class="container">
 			<div class="carousel__inner">
 				<div><img src="img/polar-rc3.jpg" alt="slide 1"></div>
@@ -116,7 +129,8 @@
 				<div><img src="img/polar-m600-trio.jpg" alt="slide 3"></div>
 			 </div>
 		</div>
-	</section>
+	</div>
+<!-- /// Блок Слайдера -->
 
 	<section class="catalog">
 		<div class="container">
@@ -375,7 +389,7 @@
 	<section class="feedback">
 		<div class="container">
 			<h2 class="title">отзывы клиентов</h2>
-			<div class="feedback__item">
+			<div class="feedback__item wow animate__fadeInUp animate__animated">
 				<img src="img/irina.png" alt="Фото Ирины">
 				<div class="feedback__text">
 					<div class="feedback__name">Ирина Иванченко </div>
@@ -389,7 +403,7 @@
 					Спасибо, RunSmart! </div>
 				</div>
 			</div>
-			<div class="feedback__item">
+			<div class="feedback__item wow animate__fadeInUp animate__animated">
 				<img src="img/ivan.png" alt="Фото Ивана">
 				<div class="feedback__text">
 					<div class="feedback__name">Иван Сёмочкин</div>
@@ -403,7 +417,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="feedback__item">
+			<div class="feedback__item wow animate__fadeInUp animate__animated">
 				<img src="img/julia.png" alt="Фото Юли">
 				<div class="feedback__text">
 					<div class="feedback__name">Юлия Дашкина</div>
@@ -425,7 +439,7 @@
 	<!-- FOOTER -->
 	<footer class="footer">
 		<div class="footer__map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.3743646845232!2d37.647221303631326!3d55.7693696845519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sua!4v1615652950863!5m2!1sru!2sua" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.3743646845232!2d37.647221303631326!3d55.7693696845519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sua!4v1615652950863!5m2!1sru!2sua" allowfullscreen="" loading="lazy"></iframe>
 		</div>
 		<div class="footer__info">
 			<address >Москва, Мясницкий проезд, д.3с1</address>
@@ -474,13 +488,25 @@
 	</div>
 	<!-- ///MODAL WINDOWS/// -->
 
+	<!-- Scroll-Up Button -->
+	<a class="pageup" href="#up">
+		<img src="img/icons/circle-up.svg" alt="Page up" >
+	</a>
 
+	<!-- //Scroll-Up Button -->
 
 	<!-- Script Block -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="js/slick.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+
+	<!-- ЖИКВЕРИ -->
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<!-- Слик слайдер -->
+	<script src="js/slick.min.js"></script>
+	<!-- WOW Еффект -->
+	<script src="js/wow.min.js"></script>
+
+	<script src="js/script.js"></script>
 	<!-- // -->
 </body>
 </html>

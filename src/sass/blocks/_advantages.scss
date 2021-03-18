@@ -12,6 +12,13 @@
 		flex-direction: column;
 		align-items: center;
 		max-width: 277px;
+		&_animated {
+			animation: hearbeat 1.5s ease infinite;
+			// animation-name: hearbeat;
+			// animation-iteration-count: infinite;
+			// animation-duration: 2s;
+			// animation-timing-function: ease;
+		}
 	}
 	&__subheader {
 		margin-top: 35px;
