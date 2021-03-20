@@ -1,23 +1,47 @@
 $(document).ready(function () {
 	// Slider
-	$('.carousel__inner').slick({
-		infinite: true,
-		speed: 500,
-		centerMode: true,
-		variableWidth: true,
-		autoplay: true,
-		autoplaySpeed: 4000,
-		prevArrow: '<button type="button" class="slick-prev"><img src="img/btn-left.png"></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="img/btn-right.png"></button>',
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					dots: true,
-					arrows: false
-				}
+	// $('.carousel__inner').slick({
+	// 	infinite: true,
+	// 	speed: 500,
+	// 	centerMode: true,
+	// 	variableWidth: true,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 4000,
+	// 	prevArrow: '<button type="button" class="slick-prev"><img src="img/btn-left.png"></button>',
+	// 	nextArrow: '<button type="button" class="slick-next"><img src="img/btn-right.png"></button>',
+	// 	responsive: [
+	// 		{
+	// 			breakpoint: 992,
+	// 			settings: {
+	// 				dots: true,
+	// 				arrows: false
+	// 			}
+	// 		}
+	// 	]
+
+	const slider = tns({
+		container: '.carousel__inner',
+		items: 1,
+		slideBy: 'page',
+		center: true,
+		autoplay: false,
+		nav: true,
+		navPosition: "bottom",
+		controls: true,
+		controlsText: [
+			'<img src = "img/btn-left.png">',
+			'<img src = "img/btn-right.png">'
+		],
+
+		responsive: {
+			300: {
+				controls: false,
+			},
+			1200: {
+				controls: true,
+				nav: false
 			}
-		]
+		}
 	});
 
 	$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
