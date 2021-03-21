@@ -1,21 +1,234 @@
-@media screen and ( max-width:991px) {
-	.promo {
-		padding: 21px 15px 93px 15px;
-		&__header {
-			font-size: 36px;
-		}
-		&__subheader {
-			font-size: 20px;
-		}
-	}
-	.button {
-		&_main {
-			width: 250px;
-		}
-	}
-	.advantages {
-		&__descr {
-			padding: 0 10px;
-		}
-	}
+@media screen and (max-width: 991px) {
+  .title {
+    font-size: 20px;
+    &_left {
+      padding: 20px;
+      font-size: 28px;
+      line-height: 46px;
+      text-align: center;
+    }
+  }
+  .button {
+    &_main {
+      width: 250px;
+    }
+  }
+  .promo {
+    padding: 21px 15px 93px 15px;
+    &__header {
+      font-size: 36px;
+    }
+    &__subheader {
+      font-size: 20px;
+    }
+  }
+
+  // Преимущества
+  .advantages {
+    &__descr {
+      padding: 0 20px;
+    }
+  }
+  // Блок с формой Консультации
+  .consult {
+    min-height: 600px;
+    // padding: 20px;
+    &__descr {
+      margin: 0 auto;
+      padding-top: 10px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 26px;
+    }
+    .feed-form {
+      margin: 36px auto;
+    }
+  }
+  // Слайдер
+  .carousel {
+    padding: 81px 10px;
+    &__inner {
+      min-width: 500px;
+    }
+  }
+  .tns-item {
+    img {
+      width: 80%;
+    }
+  }
+  .catalog {
+    &__content {
+      justify-content: space-evenly;
+    }
+  }
+
+  .feedback {
+    &__item {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__name {
+      margin-top: 20px;
+      text-align: center;
+    }
+    &__count {
+      text-align: center;
+    }
+  }
+}
+
+// ---------up to 767px----------
+@media screen and (max-width: 767px) {
+  // ВСЕ Заголовки
+  .title {
+    font-size: 24px;
+    &_left {
+      padding-top: 20px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  // КНОПКИ
+
+  .button {
+    &_main {
+      max-width: 220px;
+      font-size: 14px;
+    }
+    &_submit {
+      max-width: 280px;
+      margin: 0 auto;
+    }
+  }
+
+  .header {
+    flex-direction: column;
+    flex-wrap: wrap;
+    &__official {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    &__phone {
+      font-size: 20px;
+    }
+    &__contacts {
+      margin-top: 15px;
+      align-items: center;
+    }
+    // Стиль для кнопки в Header 'Заказать Звонок'
+    [data-modal="consultation"] {
+      margin-top: 15px;
+      font-size: 14px;
+      width: 175px;
+      height: 40px;
+    }
+  }
+  //Блок ПРОМО
+  .promo {
+    padding: 21px 15px 93px 15px;
+    &__header {
+      font-size: 28px;
+      // &__official {
+
+      // }
+    }
+    &__subheader {
+      font-size: 20px;
+      max-width: 300px;
+    }
+    &__icons {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+    &__link {
+      margin-top: 15px;
+      font-size: 14px;
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // Преимущества
+  .advantages {
+    padding: 50px 10px;
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__item {
+      max-width: 100%;
+      padding-bottom: 15px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    &__subheader {
+      font-size: 22px;
+    }
+    &__descr {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+  }
+  .consult {
+    &__descr {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+  .catalog {
+    &__tabs {
+      padding: 40px 15px 0 15px;
+    }
+    &__tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 125px;
+      height: 48px;
+      font-size: 0.95em;
+      line-height: 24px;
+    }
+  }
+
+  .footer {
+    &__info {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translateX(0%);
+      display: block;
+      padding: 40px 20px 20px;
+      width: 100%;
+      max-height: 250px;
+      address {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  //Модальные окна
+  .modal {
+    height: 430px;
+    max-width: 275px;
+    padding: 20px 5px 20px;
+    &__close {
+      right: -28px;
+    }
+    &_mini {
+      max-width: 265px;
+    }
+  }
+  // .button {
+  //   &__main {
+  //     max-width: 150px;
+  //   }
+  // }
+  .feed-form {
+    input {
+      margin: 12px 10px;
+    }
+  }
 }
